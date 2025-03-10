@@ -1,11 +1,14 @@
 # DreMa
 
-This is the official implementation of the paper: <br>
-["Dream to Manipulate: Compositional World Models Empowering Robot Imitation Learning with Imagination"](https://dreamtomanipulate.github.io/)
-<br>Leonardo Barcellona, Andrii Zadaianchuk, Davide Allegro, Samuele Papa, Stefano Ghidoni, Efstratios Gavves
-<br>ICLR 2025
+This is the official implementation of the paper: 
 
-If you find this code useful in your research, please consider citing:
+[**Dream to Manipulate: Compositional World Models Empowering Robot Imitation Learning with Imagination**](https://dreamtomanipulate.github.io/) <bR>
+Leonardo Barcellona, Andrii Zadaianchuk, Davide Allegro, Samuele Papa, Stefano Ghidoni, Efstratios Gavves <br>
+[ICLR 2025](https://iclr.cc/)
+
+![](assets/media/Simulation_and_rendering.gif)
+
+If you find this code useful in your research, please consider citing the paper:
 
 ```
 @inproceedings{
@@ -23,6 +26,7 @@ git clone --recursive https://github.com/leobarcellona/DreMa.git
 
 Install torch (1.8.1 with CUDA 11.1 is used in the paper, but you can use other versions e.g. 2.1 cuda 11.8)
 ```bash
+
 pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 --index-url https://download.pytorch.org/whl/cu118
 ```
 
@@ -36,10 +40,12 @@ pip install submodules/diff-surfel-rasterization
 pip install -r requirements.txt
 ```
 
+
+
 ## Generate the data for building the simulation
 To generate the data from CoppeliaSim you need to follow the instructions in [COPPELIA.md](COPPELIA.md)
 
-If you want to use your recorded data you need to set them in the following structure:
+If you want to use your OWN recorded data you need to set them in the following structure:
 ```
 task_name
   |
@@ -61,7 +67,8 @@ task_name
   |
   |---labels.txt (contains the <name;label> of the objects)
  ```
-the poses path should contain the following structure:
+
+The object pose files should follow this format:
 ```
 r1 r2 r3 t1
 r4 r5 r6 t2
@@ -75,19 +82,25 @@ fx 0 cx
 where r1-r9 are the rotation matrix, t1-t3 are the translation vector, fx and fy are the focal length and cx and cy are the center of the image all respect to the world frame.
 
 ### Sample data
-Download the simulation data from the following link and extract it to the data folder.
-https://drive.google.com/drive/folders/1h5Jdxo-3VvFj5TU07FqdYlkMzgWLfuYA?usp=sharing
-The slide_block scene has already the data required by simulation.py (stored in the output folder). 
-If you want to reconstruct it remove the output folder.
+
+Download the sample simulation data from the following link and extract it to the `data` folder:
+[Sample Data](https://drive.google.com/drive/folders/1h5Jdxo-3VvFj5TU07FqdYlkMzgWLfuYA?usp=sharing)  
+The `slide_block` scene contains the necessary data required by `simulation.py` (stored in the `output` folder).  
+To recreate the data, delete the `output` folder.
 
 ## Build the simulation
+
+![](assets/media/framework.png)
+
 Before creating the simulation you need to set the paths in the config files:
 1. set the correct path in congis/config.yaml
 2. (if needed) set the config/training/coppelia_params.yaml file with the correct parameters (e.g use depth images or not, use 2DGS or 3DGS etc.)
 3. ``` python create_simulation.py ```
 
-Notes: To extract the objects you need first to extract the table. This is used to filter the mesh. 
-The code will create the assets in the assets_path. If you have problem and change somthing we suggest to remove this directory and run the code again.
+**Note:**  
+To extract the objects, you must first extract the table to filter the mesh. 
+The code will create assets in the `assets_path`.
+If you encounter issues after modifying the code, we recommend removing the `assets_path` directory and rerunning the process.
 
 
 ## Execute simulation
@@ -95,14 +108,15 @@ To execute the simulation, you need to follow the following steps:
 1. Change data and assets paths in config.yaml and simulation/coppelia_simulation.yaml (if needed).
 2. Run the following command to execute the simulation: 
 ``` python simulate.py ```
-3. If you need you can visualize the simulation or change configurations in the config file. 
-By default the code will generate constantly execute the given trajectory (press r to reset the environment and q to quit).
+3. You can visualize and adjust the simulation by modifying the configuration file.  
+   By default, the simulation will execute the given trajectory continuously.  
+   - Press `r` to reset the environment.
+   - Press `q` to quit.
 
 You can visualize the scene from:
-1. the camera used for reconstructing the scene setting the parameter visualize_training_cameras to True. (arrows to change camera)
-2. the cameras in the demonstrated trajectory setting visualize_trajectory_cameras to True. (arrows to change camera)
-3. the pybullet gui camera by setting pybullet_camera to True. (interact with the GUI)
-
+- The camera used to reconstruct the scene (set `visualize_training_cameras=True`).
+- The cameras in the demonstrated trajectory (set `visualize_trajectory_cameras=True`).
+- The PyBullet GUI camera (set `pybullet_camera=True`).
 
 ## Extract augmentation data
 
