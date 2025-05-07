@@ -102,6 +102,6 @@ python RLBench/tools/prepare_data_for_peract.py \
 ### Validation and test data
 Here is a temporary link to download the validation and test data used in the paper:
 
-[Validation and test data](https://amsuni-my.sharepoint.com/:f:/g/personal/l_barcellona_uva_nl/Et9um-8BkAFHsdl9JqVrSFoB5EMBQ1tAAYPv4eSnUK4fSA?e=w4K815)
+[Validation and test data](https://amsuni-my.sharepoint.com/:f:/g/personal/l_barcellona_uva_nl/Et9um-8BkAFHsdl9JqVrSFoB5EMBQ1tAAYPv4eSnUK4fSA?e=vH6sqv)
 
 If the link is not working, please contact us by email.
