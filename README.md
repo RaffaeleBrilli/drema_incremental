@@ -22,7 +22,7 @@ If you find this code useful in your research, please consider citing the paper:
 ```
 
 ## Installation
-git clone --recursive https://github.com/leobarcellona/DreMa.git
+git clone --recursive https://github.com/leobarcellona/drema_code.git
 
 Install torch (1.8.1 with CUDA 11.1 is used in the paper, but you can use other versions e.g. 2.1 cuda 11.8)
 ```bash
@@ -93,7 +93,7 @@ To recreate the data, delete the `output` folder.
 ![](assets/media/framework.png)
 
 Before creating the simulation you need to set the paths in the config files:
-1. set the correct path in congis/config.yaml
+1. set the correct path in configs/config.yaml
 2. (if needed) set the config/training/coppelia_params.yaml file with the correct parameters (e.g use depth images or not, use 2DGS or 3DGS etc.)
 3. ``` python create_simulation.py ```
 
