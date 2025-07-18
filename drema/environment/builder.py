@@ -4,11 +4,11 @@ import yaml
 
 from scipy.spatial.transform import Rotation as R
 
-from drema.environment.base_environment import Environment
-from drema.environment.robot_envirionment import RobotEnvironment
-from drema.environment.robot.trajectory import RobotTrajectory
-from drema.environment.observer.camera import CameraManager
-from drema.utils.coppelia_utils import read_labels
+from ..environment.base_environment import Environment
+from ..environment.robot_envirionment import RobotEnvironment
+from ..environment.robot.trajectory import RobotTrajectory
+from ..environment.observer.camera import CameraManager
+from ..utils.coppelia_utils import read_labels
 
 
 class Builder:

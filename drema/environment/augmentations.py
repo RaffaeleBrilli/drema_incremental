@@ -3,8 +3,8 @@ import torch
 
 from scipy.spatial.transform import Rotation as R
 
-from drema.environment.robot_envirionment import RobotEnvironment
-from drema.utils.generation_utils import rotate_from_reference
+from ..environment.robot_envirionment import RobotEnvironment
+from ..utils.generation_utils import rotate_from_reference
 
 class AugmentationManager:
     def __init__(self, environment: RobotEnvironment):

@@ -4,7 +4,7 @@ import numpy as np
 
 import scipy.spatial.transform as R
 
-from drema.utils.drema_camera_utils import read_pose_file, write_pose_file
+from .drema_camera_utils import read_pose_file, write_pose_file
 
 
 def read_colmap_images_txt(file_path):

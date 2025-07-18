@@ -2,9 +2,9 @@ import json
 import os
 import random
 
-from drema.drema_scene.drema_dataset_readers import readTxtSceneInfo
-from drema.gaussian_splatting_utils.camera_utils import camera_to_JSON, cameraList_from_camInfos
-from drema.scene import Scene
+from ..drema_scene.drema_dataset_readers import readTxtSceneInfo
+from ..gaussian_splatting_utils.camera_utils import camera_to_JSON, cameraList_from_camInfos
+from ..scene import Scene
 
 
 class DremaScene(Scene):

@@ -6,10 +6,10 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
-from drema.gaussian_splatting_utils.graphics_utils import fov2focal, BasicPointCloud
-from drema.scene.dataset_readers import CameraInfo, sceneLoadTypeCallbacks, SceneInfo, getNerfppNorm, readColmapCameras
-from drema.utils.drema_camera_utils import read_txt_intrinsics, read_txt_extrinsic
-from drema.utils.point_cloud_utils import project_depth
+from ..gaussian_splatting_utils.graphics_utils import fov2focal, BasicPointCloud
+from ..scene.dataset_readers import CameraInfo, sceneLoadTypeCallbacks, SceneInfo, getNerfppNorm, readColmapCameras
+from ..utils.drema_camera_utils import read_txt_intrinsics, read_txt_extrinsic
+from ..utils.point_cloud_utils import project_depth
 
 
 class CameraInfoDepth(NamedTuple):

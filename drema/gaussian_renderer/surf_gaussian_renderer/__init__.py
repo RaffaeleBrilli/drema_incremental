@@ -12,9 +12,9 @@
 import torch
 import math
 from diff_surfel_rasterization import GaussianRasterizationSettings, GaussianRasterizer
-from drema.drema_scene.surface_interactive_gaussian_model import SurfInteractiveGaussianModel
-from drema.gaussian_splatting_utils.sh_utils import eval_sh
-from drema.gaussian_splatting_utils.point_utils import depth_to_normal
+from ...drema_scene.surface_interactive_gaussian_model import SurfInteractiveGaussianModel
+from ...gaussian_splatting_utils.sh_utils import eval_sh
+from ...gaussian_splatting_utils.point_utils import depth_to_normal
 
 
 def render_surf(viewpoint_camera, pc: SurfInteractiveGaussianModel, pipe, bg_color: torch.Tensor, scaling_modifier=1.0,

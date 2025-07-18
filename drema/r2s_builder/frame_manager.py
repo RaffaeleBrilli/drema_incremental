@@ -4,10 +4,10 @@ import shutil
 
 import numpy as np
 
-from drema.gaussian_splatting_utils.colmap_converter import compute_colmap
-from drema.utils.colmap_utils import read_colmap_images_txt, read_colmap_intrinsics_txt
-from drema.utils.drema_camera_utils import read_pose_file
-from drema.utils.utils import kabsch_umeyama
+from ...gaussian_splatting_utils.colmap_converter import compute_colmap
+from ...utils.colmap_utils import read_colmap_images_txt, read_colmap_intrinsics_txt
+from ...utils.drema_camera_utils import read_pose_file
+from ...utils.utils import kabsch_umeyama
 
 
 class FrameManager:

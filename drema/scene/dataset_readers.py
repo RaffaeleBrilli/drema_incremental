@@ -14,16 +14,16 @@ import sys
 from PIL import Image
 from typing import NamedTuple
 
-from drema.scene.colmap_loader import (read_extrinsics_text, read_intrinsics_text, qvec2rotmat,
+from .colmap_loader import (read_extrinsics_text, read_intrinsics_text, qvec2rotmat,
                                        read_extrinsics_binary, read_intrinsics_binary, read_points3D_binary,
                                        read_points3D_text)
-from drema.gaussian_splatting_utils.graphics_utils import getWorld2View2, focal2fov, fov2focal
+from ..gaussian_splatting_utils.graphics_utils import getWorld2View2, focal2fov, fov2focal
 import numpy as np
 import json
 from pathlib import Path
 from plyfile import PlyData, PlyElement
-from drema.gaussian_splatting_utils.sh_utils import SH2RGB
-from drema.scene.gaussian_model import BasicPointCloud
+from ..gaussian_splatting_utils.sh_utils import SH2RGB
+from .gaussian_model import BasicPointCloud
 #from drema.gaussian_splatting_utils.point_utils import project_depth
 
 

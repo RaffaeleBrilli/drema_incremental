@@ -1,4 +1,4 @@
-from drema.scene.cameras import Camera
+from ..scene.cameras import Camera
 
 
 class DepthCamera(Camera):

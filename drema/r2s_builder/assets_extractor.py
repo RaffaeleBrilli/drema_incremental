@@ -9,10 +9,10 @@ import open3d as o3d
 
 from PIL import Image
 
-from drema.drema_scene.interactive_gaussian_model import InteractiveGaussianModel
-from drema.r2s_builder.extractors.Urdf import URDFBuilder
-from drema.utils.drema_camera_utils import read_pose_file
-from drema.utils.point_cloud_utils import project_depth
+from ..drema_scene.interactive_gaussian_model import InteractiveGaussianModel
+from ..r2s_builder.extractors.Urdf import URDFBuilder
+from ..utils.drema_camera_utils import read_pose_file
+from ..utils.point_cloud_utils import project_depth
 
 
 class AssetsManager:

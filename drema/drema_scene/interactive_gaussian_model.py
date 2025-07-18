@@ -1,10 +1,10 @@
 import torch
 import tqdm
 
-from drema.scene.gaussian_model import GaussianModel
-from drema.gaussian_splatting_utils.general_utils import build_rotation
-from drema.gaussian_splatting_utils.sh_utils import SH2RGB
-from drema.utils.utils import build_quaternion
+from ..scene.gaussian_model import GaussianModel
+from ..gaussian_splatting_utils.general_utils import build_rotation
+from ..gaussian_splatting_utils.sh_utils import SH2RGB
+from ..utils.utils import build_quaternion
 
 
 class InteractiveGaussianModel(GaussianModel):

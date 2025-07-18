@@ -8,11 +8,11 @@
 #
 # For inquiries contact  george.drettakis@inria.fr
 #
-from drema.drema_scene.drema_cameras import DepthCamera
-from drema.scene.cameras import Camera
+from ..drema_scene.drema_cameras import DepthCamera
+from ..scene.cameras import Camera
 import numpy as np
-from drema.gaussian_splatting_utils.graphics_utils import fov2focal
-from drema.gaussian_splatting_utils.general_utils import PILtoTorch
+from ..gaussian_splatting_utils.graphics_utils import fov2focal
+from ..gaussian_splatting_utils.general_utils import PILtoTorch
 
 import torch
 

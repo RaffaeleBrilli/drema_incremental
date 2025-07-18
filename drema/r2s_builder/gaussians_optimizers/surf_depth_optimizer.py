@@ -2,12 +2,12 @@ from random import randint
 import matplotlib.pyplot as plt
 
 
-from drema.drema_scene import DremaScene
-from drema.drema_scene.surface_interactive_gaussian_model import SurfInteractiveGaussianModel
-from drema.gaussian_renderer.surf_gaussian_renderer import render_surf
-from drema.gaussian_splatting_utils.loss_utils import l1_loss, ssim
-from drema.gaussian_splatting_utils.mesh_utils import GaussianExtractor
-from drema.r2s_builder.gaussians_optimizers.base_optimizer import BaseTrainer
+from ...drema_scene import DremaScene
+from ...drema_scene.surface_interactive_gaussian_model import SurfInteractiveGaussianModel
+from ...gaussian_renderer.surf_gaussian_renderer import render_surf
+from ...gaussian_splatting_utils.loss_utils import l1_loss, ssim
+from ...gaussian_splatting_utils.mesh_utils import GaussianExtractor
+from ...r2s_builder.gaussians_optimizers.base_optimizer import BaseTrainer
 
 
 class SurfDepthTrainer(BaseTrainer):

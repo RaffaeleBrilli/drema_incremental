@@ -5,8 +5,8 @@ import open3d as o3d
 from PIL import Image
 from scipy.spatial.transform import Rotation as R
 
-from drema.scene import colmap_loader
-from drema.utils.point_cloud_utils import project_depth
+from ..scene import colmap_loader
+from .point_cloud_utils import project_depth
 
 ###### READ AND WRITE CAMERA PARAMETERS ######
 

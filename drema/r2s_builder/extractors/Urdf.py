@@ -22,8 +22,8 @@ class URDFBuilder:
         os.makedirs(self.objects_output_path, exist_ok=True)
 
         # move the _prototype files
-        shutil.copyfile("assets/_prototype_flat_surface.urdf", os.path.join(self.surface_output_path, "_prototype_flat_surface.urdf"), follow_symlinks=True)
-        shutil.copyfile("assets/_prototype.urdf", os.path.join(self.objects_output_path, "_prototype.urdf"), follow_symlinks=True)
+        shutil.copyfile("submodules/drema_incremental/assets/_prototype_flat_surface.urdf", os.path.join(self.surface_output_path, "_prototype_flat_surface.urdf"), follow_symlinks=True)
+        shutil.copyfile("submodules/drema_incremental/assets/_prototype.urdf", os.path.join(self.objects_output_path, "_prototype.urdf"), follow_symlinks=True)
 
         # create the builders
         self.surface_builder = ObjectUrdfBuilder(self.surface_output_path, urdf_prototype='_prototype_flat_surface.urdf')

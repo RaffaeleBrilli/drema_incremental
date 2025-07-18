@@ -3,8 +3,8 @@ import torch
 from scipy.spatial.transform import Rotation as R
 
 
-from drema.environment.base_environment import Environment
-from drema.environment.robot.robot import Robot
+from ..environment.base_environment import Environment
+from ..environment.robot.robot import Robot
 
 
 class RobotEnvironment(Environment):

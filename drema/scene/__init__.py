@@ -12,11 +12,11 @@
 import os
 import random
 import json
-from drema.gaussian_splatting_utils.system_utils import searchForMaxIteration
-from drema.scene.dataset_readers import sceneLoadTypeCallbacks
-from drema.scene.gaussian_model import GaussianModel
-from drema.arguments import ModelParams
-from drema.gaussian_splatting_utils.camera_utils import cameraList_from_camInfos, camera_to_JSON
+from ..gaussian_splatting_utils.system_utils import searchForMaxIteration
+from .dataset_readers import sceneLoadTypeCallbacks
+from .gaussian_model import GaussianModel
+from ..arguments import ModelParams
+from ..gaussian_splatting_utils.camera_utils import cameraList_from_camInfos, camera_to_JSON
 
 class Scene:
 

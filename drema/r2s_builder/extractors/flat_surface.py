@@ -1,7 +1,7 @@
 import numpy as np
 import open3d as o3d
 
-from drema.utils.point_cloud_utils import project_depth
+from ...utils.point_cloud_utils import project_depth
 
 
 def extract_table_points(depths, masks, depth_parameters, visualize=False):

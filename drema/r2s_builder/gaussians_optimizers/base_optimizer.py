@@ -2,13 +2,13 @@ import torch
 from tqdm import tqdm
 from random import randint
 
-from drema.drema_scene.interactive_gaussian_model import InteractiveGaussianModel
-from drema.gaussian_renderer.depth_gaussian_renderer import render_depth
-from drema.gaussian_renderer.original_gaussian_renderer import render
-from drema.gaussian_splatting_utils.loss_utils import l1_loss, ssim
-from drema.gaussian_splatting_utils.mesh_utils import GaussianExtractorDepth
-from drema.scene import Scene
-from drema.drema_scene import DremaScene
+from ...drema_scene.interactive_gaussian_model import InteractiveGaussianModel
+from ...gaussian_renderer.depth_gaussian_renderer import render_depth
+from ...gaussian_renderer.original_gaussian_renderer import render
+from ...gaussian_splatting_utils.loss_utils import l1_loss, ssim
+from ...gaussian_splatting_utils.mesh_utils import GaussianExtractorDepth
+from ...scene import Scene
+from ...drema_scene import DremaScene
 
 
 

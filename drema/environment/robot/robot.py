@@ -1,6 +1,6 @@
 import numpy as np
 
-from drema.environment.assets.object import ArticulatedObject
+from ...environment.assets.object import ArticulatedObject
 
 
 class Robot(ArticulatedObject):

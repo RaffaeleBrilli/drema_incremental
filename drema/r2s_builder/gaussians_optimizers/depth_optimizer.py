@@ -1,9 +1,9 @@
 import torch
 from random import randint
 
-from drema.gaussian_renderer.depth_gaussian_renderer import render_depth
-from drema.gaussian_splatting_utils.loss_utils import l1_loss, ssim
-from drema.r2s_builder.gaussians_optimizers.base_optimizer import BaseTrainer
+from ...gaussian_renderer.depth_gaussian_renderer import render_depth
+from ...gaussian_splatting_utils.loss_utils import l1_loss, ssim
+from ...r2s_builder.gaussians_optimizers.base_optimizer import BaseTrainer
 
 
 class DepthTrainer(BaseTrainer):

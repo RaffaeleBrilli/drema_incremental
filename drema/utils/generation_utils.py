@@ -3,7 +3,7 @@ import shutil
 
 from PIL import Image
 
-from drema.utils.depth_image_encoding import FloatArrayToRgbImage
+from .depth_image_encoding import FloatArrayToRgbImage
 
 
 def rotate_from_reference(position, orientation, r_position, rotation):

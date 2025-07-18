@@ -1,10 +1,10 @@
 import torch
 import numpy as np
 
-from drema.drema_scene.interactive_gaussian_model import InteractiveGaussianModel
-from drema.gaussian_renderer.depth_gaussian_renderer import render_depth
-from drema.gaussian_renderer.surf_gaussian_renderer import render_surf
-from drema.gaussian_splatting_utils.loss_utils import gaussian
+from ...drema_scene.interactive_gaussian_model import InteractiveGaussianModel
+from ...gaussian_renderer.depth_gaussian_renderer import render_depth
+from ...gaussian_renderer.surf_gaussian_renderer import render_surf
+from ...gaussian_splatting_utils.loss_utils import gaussian
 
 
 class GaussianWrapper:

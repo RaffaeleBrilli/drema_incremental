@@ -6,8 +6,8 @@ from PIL import Image
 from scipy.spatial.transform import Rotation as R
 from plyfile import PlyData, PlyElement
 
-from drema.utils.depth_image_encoding import ImageToFloatArray
-from drema.utils.point_cloud_utils import project_depth_extrinsics
+from .depth_image_encoding import ImageToFloatArray
+from .point_cloud_utils import project_depth_extrinsics
 
 
 def create_frame_from_observation(observation):

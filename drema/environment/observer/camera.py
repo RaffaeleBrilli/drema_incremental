@@ -4,10 +4,10 @@ import numpy as np
 import torch
 import cv2
 
-from drema.gaussian_splatting_utils.graphics_utils import focal2fov
-from drema.scene.cameras import Camera as GsCamera
-from drema.scene.colmap_loader import qvec2rotmat
-from drema.utils.drema_camera_utils import read_txt_extrinsic, read_txt_intrinsics
+from ...gaussian_splatting_utils.graphics_utils import focal2fov
+from ...scene.cameras import Camera as GsCamera
+from ...scene.colmap_loader import qvec2rotmat
+from ...utils.drema_camera_utils import read_txt_extrinsic, read_txt_intrinsics
 
 
 class CameraManager:

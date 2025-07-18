@@ -3,7 +3,7 @@ import pickle
 
 import numpy as np
 
-from drema.utils.trajectory_utils import compute_keypoints
+from ...utils.trajectory_utils import compute_keypoints
 
 
 class RobotTrajectory:

@@ -17,11 +17,11 @@ from torch import nn
 from simple_knn._C import distCUDA2
 from plyfile import PlyData, PlyElement
 
-from drema.drema_scene.interactive_gaussian_model import InteractiveGaussianModel
-from drema.gaussian_splatting_utils.general_utils import build_rotation
-from drema.gaussian_splatting_utils.sh_utils import RGB2SH, SH2RGB
-from drema.gaussian_splatting_utils.graphics_utils import BasicPointCloud
-from drema.gaussian_splatting_utils.system_utils import mkdir_p
+from ..drema_scene.interactive_gaussian_model import InteractiveGaussianModel
+from ..gaussian_splatting_utils.general_utils import build_rotation
+from ..gaussian_splatting_utils.sh_utils import RGB2SH, SH2RGB
+from ..gaussian_splatting_utils.graphics_utils import BasicPointCloud
+from ..gaussian_splatting_utils.system_utils import mkdir_p
 
 
 class SurfInteractiveGaussianModel(InteractiveGaussianModel):

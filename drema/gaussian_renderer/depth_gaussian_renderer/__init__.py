@@ -2,8 +2,8 @@
 import torch
 import math
 from diff_gaussian_rasterization_depth import GaussianRasterizationSettings, GaussianRasterizer
-from drema.scene.gaussian_model import GaussianModel
-from drema.gaussian_splatting_utils.sh_utils import eval_sh
+from ...scene.gaussian_model import GaussianModel
+from ...gaussian_splatting_utils.sh_utils import eval_sh
 
 
 def render_depth(viewpoint_camera, pc: GaussianModel, pipe, bg_color: torch.Tensor, scaling_modifier=1.0,

@@ -3,9 +3,9 @@ import pybullet
 import pybullet_data
 import torch
 
-from drema.environment.assets.gaussians import GaussianWrapper
-from drema.environment.assets.object import Object, FlatSurface
-from drema.utils.point_cloud_utils import filter_scharr, filter_radious_outlier
+from ..environment.assets.gaussians import GaussianWrapper
+from ..environment.assets.object import Object, FlatSurface
+from ..utils.point_cloud_utils import filter_scharr, filter_radious_outlier
 
 
 class Environment:
