@@ -72,7 +72,7 @@ class URDFBuilder:
         np.save(os.path.join(urdf_path, "mesh_coordinates" + label + ".npy"), center)
 
         self.objects_builder.build_urdf(filename=os.path.join(urdf_path, "mesh" + label + ".obj"), force_overwrite=True,
-                           decompose_concave=True, force_decompose=False, center='geometric')
+                           decompose_concave=False, force_decompose=False, center='geometric')
 
 
 
